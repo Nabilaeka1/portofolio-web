@@ -1,0 +1,271 @@
+; <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9;
+            color: #333;
+            overflow-x: hidden;
+            overflow-y: visible;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        header {
+            background-color: rgb(227, 127, 255);
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(242, 184, 255);
+            width: 100%;
+        }
+        nav a {
+            color: #777;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        nav a:focus {
+            color: #fff;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .album img {
+            width: 100%;
+            height: auto;
+            max-width: 150px;
+            margin: 10px;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .album img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: rgb(249, 200, 254);
+            color: #000;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+        }
+        .e-certificate {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 100px;
+            grid-row-gap: 10px;
+        }
+        .e-certificate embed {
+            width: 200px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            right: 10px;
+            margin-top: 50px;
+        }
+        embed:hover {
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;
+        }
+        embed{
+            margin-right: -20px;
+        }
+        .photo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 10px;
+        }
+        .photo img {
+            position: relative;
+        }
+        .home-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: -175px;
+            width: 1100px;
+        }
+        .home-text {
+            max-width: 50%;
+            text-align: left;
+        }
+        .home-image {
+            max-width: 40%;
+        }
+        .home-image img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header><b>My Portfolio</b></header>
+<nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('achieve')">Achieve</a>
+    <a href="#" onclick="showSection('album')">Album</a>
+    <a href="#" onclick="showSection('about')">About</a>
+</nav>
+<div id="home" class="content">
+    <h1><b>Welcome to My Portfolio</b></h1>
+    <br>
+    <br>
+    <marquee direction="left">Hello Visitor, welcome to Nabila's Portofolio Website This is my personal space where I share my achievements, memories, and a little about myself. Thank you for visiting!</marquee>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="home-container">
+        <div class="home-text">
+            <h1>Welcome to My Portfolio</h1>
+            <br>
+            <p>Explore my journey, achievements, and some cherished moments. Discover my interests and my work through this personal space. I’m excited to share this journey with you!</p>
+            <p>Feel free to browse around and get to know more about what I love to do. Enjoy your stay!</p>
+        </div>
+        <div class="home-image">
+            <img src="photo-1.jpg" alt="Landing Page Image">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="home-container">
+        <div class="home-text">
+            <h1>Highlights of My Journey</h1>
+            <br>
+            <p>Each achievement is a stepping stone that has shaped my path and fueled my drive for growth. From notable awards and certifications to impactful projects and collaborations, these milestones showcase my dedication and passion. Through each challenge, I’ve gained invaluable experience and honed my skills, and I'm excited to share these moments with you. I invite you to explore this collection of personal highlights, each representing a story of ambition, resilience, and the pursuit of excellence. Let these achievements not only be a reflection of where I’ve been but also an inspiration for where I’m heading. Let's taking a moment to celebrate these memories with me!</p>
+        </div>
+        <div class="home-image">
+            <img src="photo-1.jpg" alt="Landing Page Image">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="home-container">
+        <div class="home-text">
+            <h1>A Journey Through My Memories</h1>
+            <br>
+            <p>This is my cherished Memories Album, a vibrant tapestry woven from moments that have defined my journey. Each photograph is a chapter, capturing not just images, but the emotions, laughter, and stories that accompany them. This collection showcases the milestones, adventures, and intimate gatherings that have enriched my life. From the exhilarating highs of academic achievements and professional milestones to the heartwarming warmth of family gatherings and friendships, each moment reflects my passions and the people who inspire me. As you explore this album, you'll find celebratory milestones highlighting my academic and career accomplishments, travel adventures with snapshots from my journeys around the world, memorable gatherings with candid moments alongside friends and family, and glimpses of creative pursuits that fuel my creativity and passion, showcasing my journey beyond the conventional. Join me in celebrating these treasured memories, and may they inspire you to reflect on your own journey. Together, let’s embrace the stories that shape us, and the moments that make life truly special.</p>
+        </div>
+        <div class="home-image">
+            <img src="photo-1.jpg" alt="Landing Page Image">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="home-container">
+        <div class="home-text">
+            <h1>About Me</h1>
+            <br>
+            <p>I'm so excited to welcome you into my world and share the journey that has shaped who I am today. My name is Nabila, and I am a passionate multitalent who thrives at the intersection of creativity and entrepreneurship, dedicated to making a positive impact through my work in the fashion industry and beyond. Currently pursuing my studies in Fashion Design and Business Management at Universitas Negeri Surabaya, I have cultivated a diverse skill set that encompasses **modeling, fashion styling, digital content creation, and social media strategy**. This multifaceted approach allows me to navigate the complexities of the fashion world while crafting innovative solutions that resonate with a broad audience. Over the years, I have been fortunate to gather a rich tapestry of experiences, ranging from internships with prominent fashion houses where I honed my design skills, to volunteering at local community events that promote sustainable fashion. Notably, my participation in many competition not only showcased my work but also solidified my commitment to empowering women through modest fashion. Each of these experiences has significantly contributed to my growth and understanding of the industry, as well as my passion for advocating social causes.  What drives me is not merely the pursuit of personal success, but a deep-seated commitment to contribute meaningfully to the fashion community and the broader society. I actively engage in initiatives aimed at promoting body positivity and inclusivity in fashion, believing that every individual deserves to feel confident and beautiful in their skin. Outside of my professional life, I am an enthusiastic traveler and artist, often immersing myself in diverse cultures that inspire my creativity. Whether I’m exploring the vibrant streets of [sebutkan kota atau negara yang pernah dikunjungi], capturing moments through photography, or expressing my emotions on canvas, I believe that every experience adds depth to my identity and fuels my artistic vision. Through this portfolio, I aim not only to showcase my achievements and projects but also to connect with like-minded individuals who share a passion for innovation, sustainability, and the transformative power of fashion. Thank you for taking the time to learn more about me; I invite you to explore my work, engage in meaningful conversations, and join me on this exciting journey of discovery and inspiration!</p>
+        </div>
+        <div class="home-image">
+            <img src="photo-1.jpg" alt="Landing Page Image">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<div id="achieve" class="content hidden">
+    <h1><b>Achievements</b></h1>
+    <div class="e-certificate">
+        <img src="Sertif-1.jpg" 
+        alt="img_Sertif-1" width="250px" height="250px">
+        <img src="Sertif-2.jpg" 
+        alt="img_Sertif-2" width="250px" height="250px">
+        <img src="Sertif-3.jpg" 
+        alt="img_Sertif-3" width="250px" height="250px">
+        <img src="Sertif-4.jpg" 
+        alt="img_Sertif-4" width="250px" height="250px">
+        <img src="Sertif-5.jpg" 
+        alt="img_Sertif-5"width="250px" height="250px">
+        <img src="Sertif-6.jpg" 
+        alt="img_Sertif-6"width="250px" height="250px">
+    </div>
+</div>
+
+<div id="album" class="content hidden">
+    <h1><b>Photo Album</b></h1>
+        <div class="photo">
+        <img src="photo-2.jpg" alt="Album Image 1" width="250px" height="250px">
+        <img src="photo-3.jpg" alt="Album Image 2" width="250px" height="250px">
+        <img src="photo-4.jpg" alt="Album Image 3" width="250px" height="250px">
+        <img src="photo-5.jpg" alt="Album Image 4" width="250px" height="250px">
+        <img src="photo-6.jpg" alt="Album Image 5" width="250px" height="250px">
+        <img src="photo-7.jpg" alt="Album Image 6" width="250px" height="250px">
+        <img src="photo-8.jpg" alt="Album Image 7" width="250px" height="250px">
+        <img src="photo-9.jpg" alt="Album Image 8" width="250px" height="250px">
+        <img src="photo-10.jpg" alt="Album Image 9" width="250px" height="250px">
+    </div>
+    <br>
+    <br>
+    </div>
+<div id="about" class="content hidden">
+    <h1><b>About Me</b></h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>halo, nama saya <b>Nabila Eka Syafitri</b> biasa dipanggil <b>Nabila</b> dari prodi <b>S1 Sistem Informasi</b>, Jurusan <b>Teknik Informatika</b>, Fakultas <b>Teknik</b>, bakat saya <b>Multitalent</b>, dan hobiku adalah <b>berolahraga</b>, <b>Make-up</b>, <b>Fashion Models</b> dan <b>Karate</b>.</p>
+</div>
+<footer>&copy; 2024 Portfolio - Nabila Eka Syafitri</footer>
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.content');
+        sections.forEach(section => {
+        section.classList.add('hidden');
+        });
+        document.getElementById(sectionId).classList.remove('hidden');
+    }
+</script>
+</body>
+</html>
